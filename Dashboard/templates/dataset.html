@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buying Session Prediction</title>
+</head>
+<body>
+    <h3>Online Shoppers Purchasing Intention Dataset</h3>
+    {% for table in tables %}
+        {{titles[loop.index]}}
+        {{ table|safe }}
+    {% endfor %}
+</body>
+</html>
