@@ -14,8 +14,7 @@ def home():
 @app.route('/dataset', methods=("POST", "GET"))
 def dataset():
     return render_template('dataset.html',  
-        tables=[df.to_html(classes='data')], 
-        titles=df.columns.values
+        tables=[df[:500].to_html(classes='data')]
         )
 
 @app.route('/dataviz', methods=("POST", "GET"))
