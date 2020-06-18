@@ -5,111 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buying Session Prediction</title>
 </head>
+<style>
+    h3 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    form {font-family: monospace;}
+    /* input {width: 100px;} */
+</style>
 <body>
-    <h2>Please enter data to continue!</h2>
+    <h3>Please enter data to continue.</h3>
+    <br>
 
     <form method="POST" action="http://127.0.0.1:5000/predict">
         Administrative Duration (seconds):
         <br>
-        <input type="number" name="Administrative_Duration" step="0.001" min="0" max="3398" placeholder="Input number"/>
+        <input autofocus style="width:8em" type="number" required name="Administrative_Duration" step="0.001" min="0" max="3398" placeholder="Input number"/>
         <br>
         <br>
         Informational Duration (seconds):
         <br>
-        <input type="number" name="Informational_Duration" step="0.001" min="0" max="2549" placeholder="Input number"/>
+        <input style="width:8em" type="number" required name="Informational_Duration" step="0.001" min="0" max="2549" placeholder="Input number"/>
         <br>
         <br>
         Product-related Duration (seconds):
         <br>
-        <input type="number" name="ProductRelated_Duration" step="0.001" min="0" max="63973" placeholder="Input number"/>
+        <input style="width:8em" type="number" required name="ProductRelated_Duration" step="0.001" min="0" max="63973" placeholder="Input number"/>
         <br>
         <br>
         Bounce Rate (decimals):
         <br>
-        <input type="number" name="BounceRates" step="0.00002" min="0" max="0.2" placeholder="Input number"/>
+        <input style="width:8em" type="number" required name="BounceRates" step="0.00002" min="0" max="0.2" placeholder="Input number"/>
         <br>
         <br>
         Page Values (Turkish Lira):
         <br>
-        <input type="number" name="PageValues" step="0.01" min="0" max="361" placeholder="Input number"/>
+        <input style="width:8em" type="number" required name="PageValues" step="0.01" min="0" max="361" placeholder="Input number"/>
         <br>
         <br>
         Special Day (decimals):
         <br>
-        <input type="number" name="SpecialDay" step="0.2" min="0" max="1" placeholder="Input number"/>
+        <input style="width:8em" type="number" required name="SpecialDay" step="0.2" min="0" max="1" placeholder="Input number"/>
         <br>
         <br>
         Month - March:
         <br>
         <input type="radio" id="mar_yes" name="Month_Mar" value="1"/>
         <label for="mar_yes">Yes</label><br>
-        <input type="radio" id="mar_no" name="Month_Mar" value="0"/ checked>
+        <input type="radio" id="mar_no" name="Month_Mar" value="0" checked />
         <label for="mar_no">No</label><br>
         <br>
         Month - May:
         <br>
         <input type="radio" id="may_yes" name="Month_May" value="1"/>
         <label for="may_yes">Yes</label><br>
-        <input type="radio" id="may_no" name="Month_May" value="0"/ checked>
+        <input type="radio" id="may_no" name="Month_May" value="0" checked />
         <label for="may_no">No</label><br>
         <br>
         Month - Nov:
         <br>
         <input type="radio" id="nov_yes" name="Month_Nov" value="1"/>
         <label for="nov_yes">Yes</label><br>
-        <input type="radio" id="nov_no" name="Month_Nov" value="0"/ checked>
+        <input type="radio" id="nov_no" name="Month_Nov" value="0" checked />
         <label for="nov_no">No</label><br>
         <br>
         Operating System - 3:
         <br>
         <input type="radio" id="os3_yes" name="OperatingSystems_3" value="1"/>
         <label for="os3_yes">Yes</label><br>
-        <input type="radio" id="os3_no" name="OperatingSystems_3" value="0"/ checked>
+        <input type="radio" id="os3_no" name="OperatingSystems_3" value="0" checked />
         <label for="os3_no">No</label><br>
         <br>
         Traffic Type - 1:
         <br>
         <input type="radio" id="trf1_yes" name="TrafficType_1" value="1"/>
         <label for="trf1_yes">Yes</label><br>
-        <input type="radio" id="trf1_no" name="TrafficType_1" value="0"/ checked>
+        <input type="radio" id="trf1_no" name="TrafficType_1" value="0" checked />
         <label for="trf1_no">No</label><br>
         <br>
         Traffic Type - 2:
         <br>
         <input type="radio" id="trf2_yes" name="TrafficType_2" value="1"/>
         <label for="trf2_yes">Yes</label><br>
-        <input type="radio" id="trf2_no" name="TrafficType_2" value="0"/ checked>
+        <input type="radio" id="trf2_no" name="TrafficType_2" value="0" checked />
         <label for="trf2_no">No</label><br>
         <br>
         Traffic Type - 3:
         <br>
         <input type="radio" id="trf3_yes" name="TrafficType_3" value="1"/>
         <label for="trf3_yes">Yes</label><br>
-        <input type="radio" id="trf3_no" name="TrafficType_3" value="0"/ checked>
+        <input type="radio" id="trf3_no" name="TrafficType_3" value="0" checked />
         <label for="trf3_no">No</label><br>
         <br>
         Traffic Type - 13:
         <br>
         <input type="radio" id="trf13_yes" name="TrafficType_13" value="1"/>
         <label for="trf13_yes">Yes</label><br>
-        <input type="radio" id="trf13_no" name="TrafficType_13" value="0"/ checked>
+        <input type="radio" id="trf13_no" name="TrafficType_13" value="0" checked />
         <label for="trf13_no">No</label><br>
         <br>
         Visitor Type - New:
         <br>
         <input type="radio" id="new_yes" name="VisitorType_New_Visitor" value="1"/>
         <label for="new_yes">Yes</label><br>
-        <input type="radio" id="new_no" name="VisitorType_New_Visitor" value="0"/ checked>
+        <input type="radio" id="new_no" name="VisitorType_New_Visitor" value="0" checked />
         <label for="new_no">No</label><br>
         <br>
         Visitor Type - Returning:
         <br>
         <input type="radio" id="ret_yes" name="VisitorType_Returning_Visitor" value="1"/>
         <label for="ret_yes">Yes</label><br>
-        <input type="radio" id="ret_no" name="VisitorType_Returning_Visitor" value="0"/ checked>
+        <input type="radio" id="ret_no" name="VisitorType_Returning_Visitor" value="0" checked />
         <label for="ret_no">No</label><br>
         <br>
-        <input type="submit" value="Let's predict!">
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>

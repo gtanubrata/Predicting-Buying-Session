@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <title>Buying Session Prediction</title>
 </head>
+<style>
+    h3 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    h5 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    table {font-family: monospace; width: 100%;}
+    th {
+    text-align: center;
+    }
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    }
+</style>
 <body>
     <h3>Online Shoppers Purchasing Intention Dataset</h3>
-    {% for table in tables %}
-        {{titles[loop.index]}}
+    <h5>12,330 rows x 18 columns</h5>
+    <!-- {% for table in tables %} -->
         {{ table|safe }}
-    {% endfor %}
+    <!-- {% endfor %} -->
 </body>
 </html>
