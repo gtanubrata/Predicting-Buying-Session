@@ -3,5 +3,9 @@
 
 Use web session information to predict whether a visitor will finalize a purchase on an e-Commerce website.
 
-<h4>Acknowledgements<h4/>
+<h4>Acknowledgements</h4>
 Sakar, C.O., Polat, S.O., Katircioglu, M. et al. Neural Comput & Applic (2018). [Web Link]
+
+<h4>Keywords</h4>
+  Classification, e-Commerce, Digital Marketing, Conversion, Session, Channel<br>
+  Target Imbalance, Feature Selection, Model Selection, Hyperparameter Tuning, Evaluation, Deployment<br>
