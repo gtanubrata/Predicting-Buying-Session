@@ -1,16 +1,16 @@
-<h2>Predicting Buying Session on a E-commerce Website</h2>
-<h3>A Binary Classification Problem</h3>
+## Predicting Buying Session on a E-commerce Website
+### A Binary Classification Problem
 
 Use web session information to predict whether a visitor will finalize a purchase on an e-Commerce website.
 
-<h4>Acknowledgements</h4>
-Sakar, C.O., Polat, S.O., Katircioglu, M. et al. Neural Comput & Applic (2018). [Web Link]
+#### Acknowledgements
+[Sakar, C.O., Polat, S.O., Katircioglu, M. et al. Neural Comput & Applic (2018).](https://link.springer.com/article/10.1007/s00521-018-3523-0)
 
-<h4>Keywords</h4>
-  Classification, e-Commerce, Digital Marketing, Conversion, Session, Channel<br>
-  Target Imbalance, Feature Selection, Model Selection, Hyperparameter Tuning, Evaluation, Deployment<br>
+#### Keywords
+  *Classification, e-Commerce, Digital Marketing, Conversion, Session, Channel*<br>
+  *Target Imbalance, Feature Selection, Model Selection, Hyperparameter Tuning, Evaluation, Deployment*
 
-<h3>Contents</h3>
+### Contents ###
 1. Project Data Cleaning
 2. Project EDA
 3. Project Modeling
