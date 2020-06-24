@@ -9,3 +9,10 @@ Sakar, C.O., Polat, S.O., Katircioglu, M. et al. Neural Comput & Applic (2018). 
 <h4>Keywords</h4>
   Classification, e-Commerce, Digital Marketing, Conversion, Session, Channel<br>
   Target Imbalance, Feature Selection, Model Selection, Hyperparameter Tuning, Evaluation, Deployment<br>
+
+<h3>Contents</h3>
+1. Project Data Cleaning
+2. Project EDA
+3. Project Modeling
+4. Model SVM
+5. Dashboard
