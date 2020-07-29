@@ -20,6 +20,6 @@ Deployed with Flask
 [Sakar, C.O., Polat, S.O., Katircioglu, M. et al. Neural Comput & Applic (2018).](https://link.springer.com/article/10.1007/s00521-018-3523-0)
 
 ##### Keywords
-  *Classification, e-Commerce, Digital Marketing, Conversion, Session, Channel*<br>
+  *Classification, e-Commerce, Google Analytics, Digital Marketing, Conversion, Session, Channel*<br>
   *Target Imbalance, Feature Selection, Model Selection, Hyperparameter Tuning, Evaluation, Deployment*
 
